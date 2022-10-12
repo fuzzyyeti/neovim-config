@@ -39,10 +39,12 @@ nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 nnoremap <silent> <C-l> <cmd>:Files<CR>
-nnoremap <silent> <C-t> <cmd>:NERDTreeFind<CR>
-nmap <leader>v :e C:\Users\mmccarn\AppData\Local\nvim\init.vim<CR>
+nnoremap <silent> <C-r> <cmd>:Rg<CR>
+nnoremap <silent> <C-s> <cmd>:NERDTreeFind<CR>
+nnoremap <silent> <C-t> <cmd>:NERDTreeToggleVCS<CR>
+nmap <leader>v :e ~/.config/nvim/init.vim<CR>
 nmap <leader>b :Buffer<CR>
-
+nmap <leader>t :sp<CR><C-w>j:terminal<CR>i
 colorscheme nightfox
-
 let g:NERDCreateDefaultMappings = 1
+tnoremap <Esc> <C-\><C-n>
