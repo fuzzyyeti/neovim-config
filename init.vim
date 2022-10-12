@@ -21,6 +21,8 @@ Plug 'https://github.com/tpope/vim-surround'
 
 Plug 'EdenEast/nightfox.nvim'
 
+Plug 'preservim/nerdcommenter'
+
 call plug#end()
 
 lua require('lsp.cmp')
@@ -38,3 +40,9 @@ nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 nnoremap <silent> <C-l> <cmd>:Files<CR>
 nnoremap <silent> <C-t> <cmd>:NERDTreeFind<CR>
+nmap <leader>v :e C:\Users\mmccarn\AppData\Local\nvim\init.vim<CR>
+nmap <leader>b :Buffer<CR>
+
+colorscheme nightfox
+
+let g:NERDCreateDefaultMappings = 1
